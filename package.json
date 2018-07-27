@@ -8,15 +8,16 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "test": "npm run unit"
   },
   "dependencies": {
+    "better-scroll": "^1.12.4",
+    "lint-fix": "^0.24.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
     "vue-resource": "^1.5.1",
-    "better-scroll": "^1.12.4"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
